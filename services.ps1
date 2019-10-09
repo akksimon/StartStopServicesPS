@@ -1,3 +1,4 @@
+$serviceUser = Read-Host "Veuillez saisir un service "
 $serviceList = Get-Service *$serviceUser*
 
 if($serviceList.count -eq 0){
